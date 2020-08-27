@@ -1,10 +1,24 @@
 {
-  "name": "lqf scli",
-  "version": "1.0.0",
+  "name": "liangqifei",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
     "cli": "./bin/deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liangqifei/liangqifei",
+    "directory": "cli"
+  },
+  "keywords": [
+    "react",
+    "cli",
+	"liangqifei"
+  ],
+  "author": "liangqifei",
+  "bugs": {
+    "url": "https://github.com/liangqifei/liangqifei/issues"
   },
   "dependencies": {
     "chalk": "^4.1.0",
@@ -20,6 +34,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "license": "ISC"
 }

@@ -22,7 +22,7 @@ module.exports=async name=>{
     const data=await figlet('reactApp')
     log(data)
     log(`😹创建项目：${name}`)
-    await clone('github:liangqifei/REACTTS/tree/master/create_react',name)
+    await clone('github:liangqifei/REACTTS',name)
     //安装依赖
     log('安装依赖')
     await spawn ('cnpm', ['install'],{cwd:`./${name}`})
