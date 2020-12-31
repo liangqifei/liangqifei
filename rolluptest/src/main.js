@@ -1,4 +1,4 @@
-import aaa from './aaa'
+import ATest from './aaa'
 export default{
-  aaa
+  ATest
 }

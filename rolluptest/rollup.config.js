@@ -1,7 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import pkg from './package.json';
-
+import babel from '@rollup/plugin-babel';
 export default [
   // browser-friendly UMD build
   {
@@ -13,6 +13,7 @@ export default [
     },
     plugins: [
       resolve(), // so Rollup can find `ms`
+      babel({ babelHelpers: 'bundled' }),
       commonjs() // so Rollup can convert `ms` to an ES module
     ]
   },
@@ -25,10 +26,15 @@ export default [
   // `file` and `format` for each target)
   {
     input: 'src/main.js',
-    external: ['ms'],
+    external: ['react'],
     output: [
       { file: pkg.cjs, format: 'cjs' },
       { file: pkg.esm, format: 'es' }
+    ],
+    plugins: [
+      resolve(), // so Rollup can find `ms`
+      babel({ babelHelpers: 'bundled' }),
+      commonjs() // so Rollup can convert `ms` to an ES module
     ]
   }
 ];

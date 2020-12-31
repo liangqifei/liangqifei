@@ -1,4 +1,4 @@
-function aaa(ssss){
-  return ssss+'sjkdkkdkdkdk'
+import React from 'react'
+export default (props)=>{
+  return <div>rollupTest</div>
 }
-export default aaa
