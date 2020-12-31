@@ -1,0 +1,19 @@
+{
+  "name": "rolluptest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index",
+  "umd": "dist/index.umd.js",
+  "cjs": "dist/index.js",
+  "esm": "dist/index.esm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1"
+  }
+}
